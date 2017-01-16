@@ -1,0 +1,31 @@
+<div class="col-lg-12 col-sm-12 col-xs-12 card" th:fragment="usersTab">
+	<div class="col-lg-12 col-sm-12 col-xs-12" th:fragment="usersTabBox">
+		<div id="users">
+			<ul th:if="${not #lists.isEmpty(usersPage.pageable.content)}">
+				<li class="row user-line">
+						<div class="col-lg-6 col-sm-4 col-xs-12">
+							<span><strong>Username</strong></span>
+						</div>
+						<div class="col-lg-2 col-sm-2 col-xs-12">
+							<span><strong>Info</strong></span>
+						</div>
+				</li>
+				<th:block th:each="user: ${usersPage.pageable.content}">
+					<li class="row user-line">
+						<div class="col-lg-6 col-sm-4 col-xs-12">
+							<span th:text="${user.username}"></span>
+						</div>
+						<div class="col-lg-2 col-sm-2 col-xs-12">
+							<a href="javascript: void(0);" th:attr="data-bind='click: showUserInfo.bind($data,\'' + ${user.id} + '\')'" >
+									<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+							</a>
+						</div>
+					</li>
+				</th:block>
+			</ul>
+			<div th:if="${#lists.isEmpty(usersPage.pageable.content)}">
+				NO USERS
+			</div>
+		</div>
+	</div>
+</div>

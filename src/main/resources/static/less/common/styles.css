@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+main.wrapper {
+  min-height: calc(100% - 240px);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  main.wrapper {
+    min-height: calc(100% - 287px);
+  }
+}
+input[type='text'].errorInput {
+  border: 1px solid red;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  color: #555;
+}
+h4,
+h5,
+h6 {
+  margin: 0 0 5px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+a:hover {
+  text-decoration: none;
+  color: #bb509e;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #888;
+  margin: 0 0 20px;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.nomargin {
+  margin: 0;
+}
+.paddingfix {
+  padding: 15px;
+}
+.extramargin {
+  margin-left: 20px;
+}
+@media (max-width: 650px) {
+  .extramargin {
+    margin-left: 5px;
+  }
+}
+.marginbottom {
+  margin-bottom: 20px;
+}
+.space {
+  margin-left: 3px;
+}
+img {
+  max-width: 100%;
+}
+main {
+  margin-top: 79px;
+}
+blockquote {
+  color: #000;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 700;
+}
+input:placeholder {
+  font-family: 'Lato', sans-serif;
+}
+input[type='text'],
+input[type='password'] {
+  border: 1px solid #888;
+  padding-left: 3px;
+}
+input:-webkit-autofill {
+  background-color: #e0b0f0;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #e0b0f0 inset;
+}
+input[type='submit'],
+input[type='button'] {
+  background-color: #337ab7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+input[type='submit'].not-recomend,
+input[type='button'].not-recomend {
+  background-color: #5d4852;
+}
+div i {
+  margin-left: 2px;
+}
+div i.up {
+  background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div i.down {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+::-moz-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+:-ms-input-placeholder {
+  font-family: 'Lato', sans-serif;
+}
+.pagination li {
+  display: inline-block;
+}
+.pagination li.disabled {
+  color: grey;
+}
+.pagination li.disabled a {
+  color: grey;
+}
+.pagination li.active {
+  color: green;
+}
+.pagination li.active a {
+  color: green;
+}
+body {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+.wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.wrapper .top-menu {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.wrapper .top-menu .menu-link {
+  positon: fixed;
+  float: left;
+}
+.wrapper .mini-sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 50px;
+  margin-left: -50px;
+  width: 0;
+  height: 100%;
+  display: none;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.wrapper .sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.wrapper .sidebar-wrapper .selected {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.wrapper .sidebar-wrapper a.burger {
+  z-index: 2;
+  position: fixed;
+  left: 210px;
+}
+.wrapper .sidebar-wrapper a.burger i {
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.wrapper .sidebar-wrapper .sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrapper .sidebar-wrapper .sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+.wrapper .sidebar-wrapper .sidebar-nav a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+.wrapper .sidebar-wrapper .sidebar-nav a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.wrapper .sidebar-wrapper .sidebar-nav a:active,
+.wrapper .sidebar-wrapper .sidebar-nav a:focus {
+  text-decoration: none;
+}
+.wrapper .sidebar-wrapper .sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+.wrapper .sidebar-wrapper .sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+.wrapper .sidebar-wrapper .sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+.wrapper .page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+.wrapper .page-content-wrapper div.row {
+  margin: 10px 0;
+}
+.wrapper .page-content-wrapper .positive {
+  color: green;
+}
+.wrapper .page-content-wrapper .negative {
+  color: red;
+}
+.wrapper .page-content-wrapper textarea {
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+.wrapper .page-content-wrapper .success {
+  margin-top: 10px;
+}
+.wrapper .page-content-wrapper .success p {
+  color: #c965ea;
+}
+.wrapper .page-content-wrapper .fail {
+  margin-top: 10px;
+}
+.wrapper .page-content-wrapper .fail p {
+  color: red;
+}
+.wrapper .page-content-wrapper div.form {
+  overflow: hidden;
+}
+.wrapper .page-content-wrapper .margin-top {
+  margin-top: 10px;
+}
+.wrapper .page-content-wrapper ul {
+  margin: 20px 0;
+}
+.wrapper .page-content-wrapper ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.wrapper .page-content-wrapper div.train-forms {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wrapper .page-content-wrapper div.words-group-box .words,
+.wrapper .page-content-wrapper div.words-group-box .as-word,
+.wrapper .page-content-wrapper div.words-group-box .words-group-actions {
+  width: 100%;
+  max-width: 400px;
+  display: inline-block;
+}
+.wrapper .page-content-wrapper div.regex-box .regex-actions,
+.wrapper .page-content-wrapper div.regex-box .regex,
+.wrapper .page-content-wrapper div.regex-box .regex-sign {
+  width: 100%;
+  max-width: 400px;
+  display: inline-block;
+}
+.wrapper .page-content-wrapper div.words-positive-box .word,
+.wrapper .page-content-wrapper div.words-negative-box .word,
+.wrapper .page-content-wrapper div.words-positive-box .word-actions,
+.wrapper .page-content-wrapper div.words-negative-box .word-actions {
+  width: 100%;
+  max-width: 400px;
+  display: inline-block;
+}
+.wrapper .page-content-wrapper .card {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.wrapper .page-content-wrapper .summary {
+  margin-top: 10px;
+}
+.wrapper .toggled {
+  padding-left: 250px;
+}
+.wrapper .toggled .sidebar-wrapper {
+  width: 250px;
+}
+.wrapper .toggled .sidebar-wrapper a.burger {
+  position: relative;
+}
+.wrapper .toggled .page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+.wrapper .toggled.top-menu {
+  padding-left: 0;
+}
+.wrapper {
+  padding-left: 250px;
+}
+.wrapper .sidebar-wrapper {
+  width: 250px;
+}
+.wrapper.toggled {
+  padding-left: 0;
+}
+.wrapper.toggled .sidebar-wrapper {
+  width: 0;
+}
+.wrapper.toggled .sidebar-wrapper a.burger {
+  position: relative;
+}
+.wrapper .page-content-wrapper {
+  padding: 20px;
+  position: relative;
+  margin-right: 0;
+  margin-top: 0;
+}
+.toggled .page-content-wrapper {
+  padding-left: 50px;
+}
+.toggled .page-content-wrapper .main-content div.train-forms {
+  padding-left: 0;
+  padding-right: 0;
+}
+.toggled .mini-sidebar-wrapper {
+  display: block;
+  width: 44px;
+}
+.toggled .mini-sidebar-wrapper a.mini-burguer {
+  display: block;
+  padding: 10px;
+}
+.toggled .mini-sidebar-wrapper ul {
+  padding: 10px;
+}
+.toggled .mini-sidebar-wrapper ul li {
+  margin-bottom: 10px;
+}
+.toggled .mini-sidebar-wrapper ul li .fa-object-group {
+  margin-left: -4px;
+}
+@media (max-width: 500px) {
+  .page-content-wrapper {
+    padding-right: 0 ! important;
+  }
+  .page-content-wrapper .container-fluid {
+    padding-left: 0 ! important;
+  }
+}

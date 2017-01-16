@@ -1,0 +1,30 @@
+.pagination {
+	ul{
+		display: inline-block;
+		li {
+			display: inline-block;
+			border-bottom: 0px !important;
+			
+			a {
+				font-family: 'PT Sans', sans-serif;
+				font-size: 15px;
+				font-weight: 600;
+			}
+			
+			&.disabled {
+				color: grey;
+				a {
+					color: grey;
+				}
+			}
+	
+			&.active {
+				color: green;
+				a {
+					color: green;
+				}
+			}
+		}
+	}
+}
+
